@@ -1,7 +1,7 @@
 {
   "name": "xml-to-escpos",
   "version": "1.0.2",
-  "homepage": "https://ajar-krill-39c.notion.site/Xml-to-Esc-Pos-482565e31bbd440997319622857675bb"
+  "homepage": "https://ajar-krill-39c.notion.site/Xml-to-Esc-Pos-482565e31bbd440997319622857675bb",
   "description": "ESC/POS with XML interface",
   "keywords": [
     "escpos",
@@ -21,7 +21,7 @@
     "node": ">=4.0.0"
   },
   "license" : {
-    "type": "MIT", 
+    "type": "MIT",
     "url": "https://www.opensource.org/licenses/mit-license.php"
   },
   "scripts": {
@@ -30,7 +30,7 @@
     "clean": "rm -rf ./lib && rm -rf tsconfig.build.tsbuildinfo",
     "compile": "tsc -p ./tsconfig.build.json"
   },
-  "autor" : "Alex Cardoso Madeira <alex.c.madeira@gmail.com> (http://www.alexmadeira.com.br/),
+  "autor" : "Alex Cardoso Madeira <alex.c.madeira@gmail.com> (http://www.alexmadeira.com.br/)",
   "repository": {
     "type": "git",
     "url": "https://github.com/alexmadeira/xml-to-escpos"
