@@ -2,8 +2,8 @@
 
 ### Translation/Tradução
 
-[🇧🇷](README-pt_br.md)
-[🇺🇸](README.md)
+[🇧🇷](https://github.com/alexmadeira/xml-to-escpos/blob/master/README-pt_br.md)
+[🇺🇸](https://github.com/alexmadeira/xml-to-escpos/blob/master/README.md)
 
 ---
 
