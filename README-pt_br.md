@@ -7,7 +7,7 @@
 
 ---
 
-Cross platform JavaScript library that implements the thermal printer ESC / POS protocol and provides an XML interface for preparing templates for printing.
+Biblioteca JavaScript codificação para o protocolo ESC/POS da impressora térmica e fornece uma interface XML para preparar modelos para impressão.
 
 ## **Features**
 
@@ -25,30 +25,30 @@ Cross platform JavaScript library that implements the thermal printer ESC / POS 
 - [x] Image (base64) (png only)
 - [x] XML with mustache
 
-## **Tested manually on following environments or platforms**
+## Testado manualmente nos seguintes ambientes ou plataformas
 
-- [x] React Native (Android)
-- [x] React Native (iOS)
-- [x] React Native Web
-- [x] Server side (NodeJs)
-- [x] Desktop applications (nwjs & electron)
-- [x] Other node environment (terminal)
+- [ ] React Native (Android)
+- [ ] React Native (iOS)
+- [ ] React Native Web
+- [ ] Server side (NodeJs)
+- [ ] Desktop applications (nwjs & electron)
+- [ ] Other node environment (terminal)
 
-# **Installation**
+# **Instalação**
 
 ```bash
 yarn add xml-to-escpos
 ```
 
-Or
+Ou
 
 ```bash
 npm install xml-to-escpos --save
 ```
 
-## **Examples**
+## **Exemplos**
 
-### **From plain XML**
+### De XML simples
 
 ```tsx
 import { EscPos } from 'escpos-xml';
@@ -64,7 +64,7 @@ const buffer = EscPos.getBufferFromXML(xml);
 // send this buffer to a stream (eg.: bluetooth, wifi, usb, etc.)
 ```
 
-### **From XML + Handlebars**
+### De XML + Mustache Js
 
 ```tsx
 import { EscPos } from 'xml-to-escpos';
@@ -84,7 +84,7 @@ const buffer = EscPos.getBufferFromTemplate(template, input);
 // send this buffer to a stream (eg.: bluetooth, wifi, usb, etc.)
 ```
 
-### **With an XML template + png image (base64)**
+### Com um modelo XML + imagem png (base64)
 
 ```tsx
 const template = `<?xml version="1.0" encoding="UTF-8"?>
@@ -117,23 +117,22 @@ const buffer = EscPos.getBufferFromTemplate(template, input);
 - [ ] Barcode
 - [ ] Image bitmap conversion improvements
 - [ ] jpeg support
-- [ ] Add example apps to repo
-- [ ] Removed uglify for some reason, need to bring it back
 - [ ] Improve image rendering
 
-## **Common issues**
+## Problemas comuns
 
-If there is any delay you observe while printing with this library it is mostly due to image manipulations (try without image 😬 )
+Se houver algum atraso ao imprimir com esta biblioteca, isso se deve principalmente a manipulações de imagem (tente sem imagem 😬 )
 
-## **Useful links / resources**
+## Links/recursos úteis
 
-- [ESC / POS Commands manual](notion://www.notion.so/resources/ESCPOS_Command_Manual.pdf)
-- A [blog post](https://www.visuality.pl/posts/thermal-printer-protocols-for-image-and-text#:~:text=How%20can%20we%20print%20an,command%20language%20of%20thermal%20printers) explaiing about printing images with ESCPOS
-- Similar library for serverside - [node-escpos](https://github.com/song940/node-escpos).
+- [Manual de Comandos ESC/POS](notion://www.notion.so/resources/ESCPOS_Command_Manual.pdf)
+- Uma [postagem no blog](https://www.visuality.pl/posts/thermal-printer-protocols-for-image-and-text#:~:text=How%20can%20we%20print%20an,command%20language%20of%20thermal%20printers) explicando sobre a impressão de imagens com ESC/POS
+- Biblioteca semelhante para serverside - [node-escpos](https://github.com/song940/node-escpos).
 
-- _Limitations on the react-native framework_
-  - [FileReader.readAsArrayBuffer](https://github.com/facebook/react-native/issues/21209) was not implemented.
-  - Most of popular image manupulation libraries does not have support for react-native. eg : [jimp](https://www.npmjs.com/package/jimp), Most of popular image manupulation libraries does not have support for react-native. eg : [jimp](https://www.npmjs.com/package/jimp), [jpeg-js](https://www.npmjs.com/package/jpeg-js) and [sharp](https://www.npmjs.com/package/sharp). We can use these libraries with some native node lib implemented in react native (some sort of polyfill).
+- Limitações no framework react-native
+  - [FileReader.readAsArrayBuffer](https://github.com/facebook/react-native/issues/21209) não foi implementado.
+  - A maioria das bibliotecas populares de manipulação de imagem não tem suporte para react-native. por exemplo: [jimp](https://www.npmjs.com/package/jimp), [jpeg-js](https://www.npmjs.com/package/jpeg-js) e [sharp](https://www.npmjs.com/package/sharp). Podemos usar essas bibliotecas com alguma biblioteca de nó nativo implementada em react native (algum tipo de polyfill).
   - Use this [node-libs-react-native](https://www.npmjs.com/package/node-libs-react-native) if we need to use this library in react native (adds some mock or js implementation for fs, stream etc)
+  - Use [node-libs-react-native](https://www.npmjs.com/package/node-libs-react-native) se precisar usar esta biblioteca em react-native (adiciona alguma implementação simulada ou js para fs, stream etc.)
   ***
-  Contributions of any kind welcome! :heart:
+  Contribuições de qualquer tipo são bem-vindas! ❤️
