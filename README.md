@@ -2,8 +2,8 @@
 
 Translations/Traduções
 
-[🇧🇷](/README-pt_br.md)
-[🇺🇸](/README.md)
+[🇧🇷](README-pt_br.md)
+[🇺🇸](README.md)
 
 Cross platform JavaScript library that implements the thermal printer ESC / POS protocol and provides an XML interface for preparing templates for printing.
 
