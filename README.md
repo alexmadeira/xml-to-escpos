@@ -2,8 +2,8 @@
 
 ### Translation/Tradução
 
-[🇧🇷](/README-pt_br.md)
-[🇺🇸](/README.md)
+[🇧🇷](README-pt_br.md)
+[🇺🇸](README.md)
 
 ---
 
