@@ -1,5 +1,10 @@
 # **XML to ESC/POS**
 
+Translations/Traduções
+
+[🇧🇷](/README-pt_br.md)
+[🇺🇸](/README.md)
+
 Cross platform JavaScript library that implements the thermal printer ESC / POS protocol and provides an XML interface for preparing templates for printing.
 
 ## **Features**
@@ -116,7 +121,7 @@ const buffer = EscPos.getBufferFromTemplate(template, input);
 
 ## **Common issues**
 
-If there is any delay you observe while printing with this library it is mostly due to image manipulations (try without image :mask: )
+If there is any delay you observe while printing with this library it is mostly due to image manipulations (try without image 😬 )
 
 ## **Useful links / resources**
 
